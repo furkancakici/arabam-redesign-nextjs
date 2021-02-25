@@ -50,14 +50,9 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: "Poppins", sans-serif;
     background-color:${({ theme }) => theme.backgroundColor.white};
-    vertical-align: baseline;
     line-height: 1;
     font-size:16px;
     min-width:320px;
-
-    ${SIZES.tablet}{
-      touch-action: none;
-    }
   }
 
   

@@ -16,7 +16,6 @@ import {
     SvgApp,
     SvgSocial,
     StyledText,
-    P,
     DIV,
     SocialText,
     FooterContainer,

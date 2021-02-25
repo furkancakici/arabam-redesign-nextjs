@@ -74,11 +74,6 @@ export const StyledSelect = styled.span`
 export const StyledCategorySelect = styled.span<{ width?: number }>`
     width: ${({ width }) => width}px;
     z-index: 20;
-    /* margin-bottom:${({ mb }) => mb}px; */
-
-    ${SIZES.tablet} {
-        /* margin-right:7px; */
-    }
 
     .css-1wa3eu0-placeholder {
         font-weight: 700;

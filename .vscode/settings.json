@@ -1,0 +1,16 @@
+{
+    "files.exclude": {
+        "node_modules": false,
+        ".next": false,
+        ".vscode": false,
+        ".eslintrc.json": false,
+        ".prettierrc.json": false,
+        "next-env.d.ts": false,
+        "README.md": false,
+        ".gitignore": false,
+        "yarn.lock": false,
+        ".babelrc": false,
+        "nextjs.config.js": false
+    },
+    "workspace.isHidden": false
+}

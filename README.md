@@ -7,8 +7,8 @@ CANLI: https://arabam-redesign-nextjs.vercel.app/
 #### [Reyyan Karataş](https://www.linkedin.com/in/reyyankaratas/) ' a bu çalışmayı yapmama müsade ettiği için teşekkür ederim.
 
 
-##### NOT_1 :(Bitmiş bir proje değil vakit buldukça eksikleri tamamlamaya çalışıcam.)
-##### NOT_2 :(Elimde figma dosyası olmadan görselleri ve ölçüleri kaynaklardan bularak temin ettim)
+##### NOT 1 : (Bitmiş bir proje değil vakit buldukça eksikleri tamamlamaya çalışıcam.)
+##### NOT 2 : (Elimde figma dosyası olmadan görselleri ve ölçüleri kaynaklardan bularak temin ettim)
 ### Kullandığım Teknolojiler:
 
 + Next.js

@@ -9,7 +9,7 @@ CANLI: https://arabam-redesign-nextjs.vercel.app/
 
 ##### NOT 1 : (Bitmiş bir proje değil vakit buldukça eksikleri tamamlamaya çalışıcam.)
 ##### NOT 2 : (Elimde figma dosyası olmadan görselleri ve ölçüleri kaynaklardan bularak temin ettim)
-### Kullandığım Teknolojiler:
+### Kullandığım Teknolojiler :
 
 + Next.js
 + Styled Components

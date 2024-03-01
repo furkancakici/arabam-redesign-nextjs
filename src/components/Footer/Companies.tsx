@@ -12,9 +12,7 @@ const Companies: FC<Props> = ({ href, text }) => {
         <>
             <StyledComp>
                 <Link href={href} passHref>
-                    <A target="_blank" rel="noreferrer">
-                        {text}
-                    </A>
+                    {text}
                 </Link>
             </StyledComp>
         </>

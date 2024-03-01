@@ -13,7 +13,7 @@ import {
     MobileSpan,
     MobileInput,
     Span,
-    Input,
+    Input
 } from './styles'
 import { Sling as HamburgerMenu } from 'hamburger-react'
 import { CardDatas } from '@data/index'
@@ -32,22 +32,20 @@ const Navbar: FC = () => {
         <>
             <NavWrapper>
                 <StyledNavbar>
-                    <Link href="/" passHref>
-                        <a>
-                            <StyledImgLogo
-                                src="/images/logo.gif"
-                                alt="Site Logo"
-                                width={isMobile ? '200' : '250'}
-                                height={45}
-                            />
-                        </a>
+                    <Link href='/' passHref>
+                        <StyledImgLogo
+                            src='/images/logo.gif'
+                            alt='Site Logo'
+                            width={isMobile ? '200' : '250'}
+                            height={45}
+                        />
                     </Link>
                     <Span>
                         <Input
-                            type="text"
-                            id="search"
-                            placeholder="Kelime, galeri no veya ilan adı ile ara"
-                            autoComplete="off"
+                            type='text'
+                            id='search'
+                            placeholder='Kelime, galeri no veya ilan adı ile ara'
+                            autoComplete='off'
                         />
                     </Span>
                     <Button width={200} primary>
@@ -60,13 +58,7 @@ const Navbar: FC = () => {
                         Giriş Yap
                     </Button>
                     <StyledHamburger>
-                        <HamburgerMenu
-                            toggled={isOpen}
-                            toggle={setOpen}
-                            rounded
-                            direction="left"
-                            color="#C9202F"
-                        />
+                        <HamburgerMenu toggled={isOpen} toggle={setOpen} rounded direction='left' color='#C9202F' />
                     </StyledHamburger>
                 </StyledNavbar>
 
@@ -74,13 +66,13 @@ const Navbar: FC = () => {
                     <Navigation>
                         <MobileSpan>
                             <MobileInput
-                                type="text"
-                                id="mobileSearch"
-                                placeholder="Kelime, galeri no veya ilan adı ile ara"
-                                autoComplete="off"
+                                type='text'
+                                id='mobileSearch'
+                                placeholder='Kelime, galeri no veya ilan adı ile ara'
+                                autoComplete='off'
                             />
                         </MobileSpan>
-                        <div className="flex">
+                        <div className='flex'>
                             <MobileButton big primary>
                                 Ücretsiz İlan Ver
                             </MobileButton>
@@ -90,13 +82,11 @@ const Navbar: FC = () => {
                             <Card data={CardDatas} />
                             <StyledAdCard>
                                 <StyledAdButton primary>
-                                    Tüm İlanlar{' '}
-                                    <span className="count">(250.150)</span>{' '}
-                                    <span className="rightOk">&gt;</span>
+                                    Tüm İlanlar <span className='count'>(250.150)</span>{' '}
+                                    <span className='rightOk'>&gt;</span>
                                 </StyledAdButton>
                                 <StyledAdButton>
-                                    Tüm Kategoriler{' '}
-                                    <span className="rightOk">&gt;</span>
+                                    Tüm Kategoriler <span className='rightOk'>&gt;</span>
                                 </StyledAdButton>
                             </StyledAdCard>
                         </NavList>

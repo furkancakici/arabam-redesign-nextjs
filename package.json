@@ -2,6 +2,9 @@
     "name": "arabam-redesign-nextjs",
     "version": "0.1.0",
     "private": true,
+    "engines": {
+        "node": ">=18.0.0"
+    },
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -11,10 +14,10 @@
     },
     "dependencies": {
         "hamburger-react": "^2.4.0",
-        "next": "10.0.4",
-        "react": "17.0.1",
+        "next": "^14.1.1",
+        "react": "^18.2.0",
         "react-collapse": "^5.1.0",
-        "react-dom": "17.0.1",
+        "react-dom": "^18.2.0",
         "react-responsive": "^8.2.0",
         "react-select": "^4.0.2",
         "react-tabs": "^3.1.2",
@@ -22,14 +25,14 @@
         "swiper": "^6.4.10"
     },
     "devDependencies": {
-        "@svgr/cli": "^5.5.0",
-        "@svgr/webpack": "^5.5.0",
+        "@svgr/cli": "^8.1.0",
+        "@svgr/webpack": "^8.1.0",
         "@types/node": "^14.14.16",
         "@types/react": "^17.0.0",
         "@types/styled-components": "^5.1.7",
         "@typescript-eslint/eslint-plugin": "^4.11.1",
         "@typescript-eslint/parser": "^4.11.1",
-        "babel-plugin-inline-react-svg": "^1.1.2",
+        "babel-plugin-inline-react-svg": "^2.0.2",
         "babel-plugin-styled-components": "^1.12.0",
         "eslint": "^7.16.0",
         "eslint-config-prettier": "^7.1.0",

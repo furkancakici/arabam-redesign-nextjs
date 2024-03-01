@@ -12,11 +12,9 @@ const AppButtons: FC<Props> = ({ src, href }) => {
         <>
             <ButtonContainer>
                 <Link href={href} passHref>
-                    <a target="_blank" rel="noreferrer">
-                        <StyledSpan>
-                            <Icon>{src}</Icon>
-                        </StyledSpan>
-                    </a>
+                    <StyledSpan>
+                        <Icon>{src}</Icon>
+                    </StyledSpan>
                 </Link>
             </ButtonContainer>
         </>

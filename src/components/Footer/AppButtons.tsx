@@ -14,16 +14,14 @@ const AppButtons: FC<Props> = ({ src, href, PlatName }) => {
             <ButtonContainer>
                 <AppCard>
                     <Link href={href} passHref>
-                        <a target="_blank" rel="noreferrer">
-                            <StyledSpan>
-                                <Icon>{src}</Icon>
-                                <StyledDIV>
-                                    <h2>{PlatName}</h2>
-                                    <h3>indirebilirsiniz</h3>
-                                    <h4>indirin</h4>
-                                </StyledDIV>
-                            </StyledSpan>
-                        </a>
+                        <StyledSpan>
+                            <Icon>{src}</Icon>
+                            <StyledDIV>
+                                <h2>{PlatName}</h2>
+                                <h3>indirebilirsiniz</h3>
+                                <h4>indirin</h4>
+                            </StyledDIV>
+                        </StyledSpan>
                     </Link>
                 </AppCard>
             </ButtonContainer>

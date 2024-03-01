@@ -10,7 +10,7 @@ import {
     Flex,
     Justify,
     Label,
-    MainSliderContainer,
+    MainSliderContainer
 } from './styles'
 import { TestData, NewsData } from '@data/index'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -33,23 +33,15 @@ const Slider: FC = () => {
                             <Label>{TestData.content.label}</Label>
                         </Justify>
                         <Flex>
-                            <CustomButton ref={prevRef}>
-                                {TestData.content.svg_2}
-                            </CustomButton>
-                            <CustomPagination className="pagin" />
-                            <CustomButton ref={nextRef}>
-                                {TestData.content.svg_1}
-                            </CustomButton>
+                            <CustomButton ref={prevRef}>{TestData.content.svg_2}</CustomButton>
+                            <CustomPagination className='pagin' />
+                            <CustomButton ref={nextRef}>{TestData.content.svg_1}</CustomButton>
                         </Flex>
                     </Content>
                     <Swiper
                         navigation={{
-                            prevEl: prevRef.current
-                                ? prevRef.current
-                                : undefined,
-                            nextEl: nextRef.current
-                                ? nextRef.current
-                                : undefined,
+                            prevEl: prevRef.current ? prevRef.current : undefined,
+                            nextEl: nextRef.current ? nextRef.current : undefined
                         }}
                         onInit={(swiper: any) => {
                             swiper.params.navigation.prevEl = prevRef.current
@@ -61,39 +53,26 @@ const Slider: FC = () => {
                             type: 'bullets',
                             clickable: true,
                             renderBullet: function (index, className) {
-                                return (
-                                    '<span class="' +
-                                    className +
-                                    '">' +
-                                    '.' +
-                                    '</span>'
-                                )
-                            },
+                                return '<span class="' + className + '">' + '.' + '</span>'
+                            }
                         }}
                         breakpoints={{
                             320: {
                                 slidesPerView: 1,
-                                spaceBetween: 1,
+                                spaceBetween: 1
                             },
                             480: {
                                 slidesPerView: 2,
-                                spaceBetween: 1,
+                                spaceBetween: 1
                             },
                             992: {
                                 slidesPerView: 2.5,
-                                spaceBetween: 80,
-                            },
-                        }}
-                    >
+                                spaceBetween: 80
+                            }
+                        }}>
                         {TestData.data.map((data, i) => (
                             <SwiperSlide key={i}>
-                                <Card
-                                    key={i}
-                                    src={data.src}
-                                    title={data.title}
-                                    body={data.body}
-                                    label={data.label}
-                                />
+                                <Card key={i} src={data.src} title={data.title} body={data.body} label={data.label} />
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -108,23 +87,15 @@ const Slider: FC = () => {
                         </Justify>
 
                         <Flex>
-                            <CustomButton ref={prevRef}>
-                                {TestData.content.svg_2}
-                            </CustomButton>
-                            <CustomPagination className="paginn" />
-                            <CustomButton ref={nextRef}>
-                                {TestData.content.svg_1}
-                            </CustomButton>
+                            <CustomButton ref={prevRef}>{TestData.content.svg_2}</CustomButton>
+                            <CustomPagination className='paginn' />
+                            <CustomButton ref={nextRef}>{TestData.content.svg_1}</CustomButton>
                         </Flex>
                     </Content>
                     <Swiper
                         navigation={{
-                            prevEl: prevRef.current
-                                ? prevRef.current
-                                : undefined,
-                            nextEl: nextRef.current
-                                ? nextRef.current
-                                : undefined,
+                            prevEl: prevRef.current ? prevRef.current : undefined,
+                            nextEl: nextRef.current ? nextRef.current : undefined
                         }}
                         onInit={(swiper: any) => {
                             swiper.params.navigation.prevEl = prevRef.current
@@ -136,39 +107,26 @@ const Slider: FC = () => {
                             type: 'bullets',
                             clickable: true,
                             renderBullet: function (index, className) {
-                                return (
-                                    '<span class="' +
-                                    className +
-                                    '">' +
-                                    '.' +
-                                    '</span>'
-                                )
-                            },
+                                return '<span class="' + className + '">' + '.' + '</span>'
+                            }
                         }}
                         breakpoints={{
                             320: {
                                 slidesPerView: 1,
-                                spaceBetween: 1,
+                                spaceBetween: 1
                             },
                             480: {
                                 slidesPerView: 2,
-                                spaceBetween: 1,
+                                spaceBetween: 1
                             },
                             992: {
                                 slidesPerView: 2.5,
-                                spaceBetween: 80,
-                            },
-                        }}
-                    >
+                                spaceBetween: 80
+                            }
+                        }}>
                         {NewsData.data.map((data, i) => (
                             <SwiperSlide key={i}>
-                                <Card
-                                    key={i}
-                                    src={data.src}
-                                    title={data.title}
-                                    body={data.body}
-                                    label={data.label}
-                                />
+                                <Card key={i} src={data.src} title={data.title} body={data.body} label={data.label} />
                             </SwiperSlide>
                         ))}
                     </Swiper>

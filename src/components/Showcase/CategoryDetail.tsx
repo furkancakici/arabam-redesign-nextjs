@@ -6,17 +6,13 @@ import {
     StyledInput,
     StyledInputs,
     StyledSpan,
-    StyledCollapse,
+    StyledCollapse
 } from './styles'
 import { VehicleDatas } from '@data/index'
 import { Button, ButtonsContainer } from '@components/Navbar/styles'
 import { Categories } from '@components/index'
 import { MainSection } from '@assets/styles/GlobalStyles'
-import {
-    StyledSelectInput,
-    StyledCategorySelect,
-    StyledCategoryInput,
-} from '@components/Inputs/styles'
+import { StyledSelectInput, StyledCategorySelect, StyledCategoryInput } from '@components/Inputs/styles'
 import Select from 'react-select'
 import { Collapse, UnmountClosed } from 'react-collapse'
 import { useState } from 'react'
@@ -72,7 +68,7 @@ export const Buttons = () => {
 const SideCategoryOption_Unit = [
     { value: 'tl', label: 'TL' },
     { value: 'euro', label: 'EURO' },
-    { value: 'dolar', label: 'DOLAR' },
+    { value: 'dolar', label: 'DOLAR' }
 ]
 
 const SideCategoryOption_City = [
@@ -80,7 +76,7 @@ const SideCategoryOption_City = [
     { value: 'ankara', label: 'ANKARA' },
     { value: 'izmir', label: 'İZMİR' },
     { value: 'bursa', label: 'BURSA' },
-    { value: 'antalya', label: 'ANTALYA' },
+    { value: 'antalya', label: 'ANTALYA' }
 ]
 
 const SideCategoryOption_District = [
@@ -88,7 +84,7 @@ const SideCategoryOption_District = [
     { value: 'çankaya', label: 'ÇANKAYA' },
     { value: 'bayraklı', label: 'BAYRAKLI' },
     { value: 'bursa', label: 'OSMANGAZİ' },
-    { value: 'antalya', label: 'ELMALI' },
+    { value: 'antalya', label: 'ELMALI' }
 ]
 
 const SideCategoryDetails = () => {
@@ -105,15 +101,15 @@ const SideCategoryDetails = () => {
                 <StyledCategoryInput>
                     <StyledCategorySelect width={180}>
                         <Select
-                            key={SideCategoryOption_Unit.values}
+                            key={SideCategoryOption_Unit.values.toString()}
                             options={SideCategoryOption_Unit}
                             placeholder={'TL'}
                         />
                     </StyledCategorySelect>
                 </StyledCategoryInput>
                 <StyledInputs>
-                    <StyledInput type="text" width={60} placeholder="Min" />
-                    <StyledInput type="text" width={60} placeholder="Max" />
+                    <StyledInput type='text' width={60} placeholder='Min' />
+                    <StyledInput type='text' width={60} placeholder='Max' />
                 </StyledInputs>
             </SideContent>
 
@@ -122,12 +118,12 @@ const SideCategoryDetails = () => {
                 <StyledCategoryInput>
                     <StyledCategorySelect width={175}>
                         <Select
-                            key={SideCategoryOption_City.values}
+                            key={SideCategoryOption_City.values.toString()}
                             options={SideCategoryOption_City}
                             placeholder={'İL'}
                         />
                         <Select
-                            key={SideCategoryOption_District.values}
+                            key={SideCategoryOption_District.values.toString()}
                             options={SideCategoryOption_District}
                             placeholder={'İLÇE'}
                         />
@@ -138,15 +134,15 @@ const SideCategoryDetails = () => {
             <SideContent height={70}>
                 <h2>Yıl</h2>
                 <StyledInputs>
-                    <StyledInput type="text" width={65} placeholder="Min" />
-                    <StyledInput type="text" width={65} placeholder="Max" />
+                    <StyledInput type='text' width={65} placeholder='Min' />
+                    <StyledInput type='text' width={65} placeholder='Max' />
                 </StyledInputs>
             </SideContent>
 
             <SideContent height={80}>
                 <h2>Anahtar Kelime</h2>
                 <StyledInputs>
-                    <StyledInput type="text" width={90} placeholder="Araba" />
+                    <StyledInput type='text' width={90} placeholder='Araba' />
                     <Button primary width={70}>
                         Ara
                     </Button>
@@ -154,59 +150,55 @@ const SideCategoryDetails = () => {
             </SideContent>
 
             <SideContent>
-                <div className="justify-content" onClick={handleClick}>
+                <div className='justify-content' onClick={handleClick}>
                     <h2>İLAN TARİHİ</h2>
                     <StyledSpan clicked={clicked}>{`>`}</StyledSpan>
                 </div>
                 <Collapse isOpened={clicked}>
                     <StyledCollapse>
-                        <label className="container">
+                        <label className='container'>
                             Son 1 Gün
-                            <input
-                                type="radio"
-                                defaultChecked={true}
-                                name="radio"
-                            />
-                            <span className="checkmark"></span>
+                            <input type='radio' defaultChecked={true} name='radio' />
+                            <span className='checkmark'></span>
                         </label>
-                        <label className="container">
+                        <label className='container'>
                             Son 2 Gün
-                            <input type="radio" name="radio" />
-                            <span className="checkmark"></span>
+                            <input type='radio' name='radio' />
+                            <span className='checkmark'></span>
                         </label>
-                        <label className="container">
+                        <label className='container'>
                             Son 3 Gün
-                            <input type="radio" name="radio" />
-                            <span className="checkmark"></span>
+                            <input type='radio' name='radio' />
+                            <span className='checkmark'></span>
                         </label>
-                        <label className="container">
+                        <label className='container'>
                             Son 7 Gün
-                            <input type="radio" name="radio" />
-                            <span className="checkmark"></span>
+                            <input type='radio' name='radio' />
+                            <span className='checkmark'></span>
                         </label>
-                        <label className="container">
+                        <label className='container'>
                             Son 30 Gün
-                            <input type="radio" name="radio" />
-                            <span className="checkmark"></span>
+                            <input type='radio' name='radio' />
+                            <span className='checkmark'></span>
                         </label>
                     </StyledCollapse>
                 </Collapse>
             </SideContent>
 
             <SideContent>
-                <div className="justify-content">
+                <div className='justify-content'>
                     <h2>ÖZEL İLANLAR</h2>
                     <StyledSpan>
-                        <span className="bottom">{`>`}</span>
+                        <span className='bottom'>{`>`}</span>
                     </StyledSpan>
                 </div>
             </SideContent>
 
             <SideContent>
-                <div className="justify-content">
+                <div className='justify-content'>
                     <h2>FOTOĞRAFLI İLANLAR</h2>
                     <StyledSpan>
-                        <span className="bottom">{`>`}</span>
+                        <span className='bottom'>{`>`}</span>
                     </StyledSpan>
                 </div>
             </SideContent>

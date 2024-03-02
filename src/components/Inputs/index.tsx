@@ -4,59 +4,49 @@ import { StyledSelectInput, StyledSelect, StyledCategorySelect } from './styles'
 import { VehicleSelectData } from '@data/index'
 
 export const SelectInput = () => {
-    const [typeOptions, setTypeOptions] = useState(
-        VehicleSelectData.VehicleType
-    )
-    const [brandOptions, setBrandOptions] = useState(
-        VehicleSelectData.VehicleBrand
-    )
-    const [modelOptions, setModelOptions] = useState(
-        VehicleSelectData.VehicleModel
-    )
-    const [modelTwoOptions, setModelTwoOptions] = useState(
-        VehicleSelectData.VehicleModel_2
-    )
-    const [modelThreeOptions, setModelThreeOptions] = useState(
-        VehicleSelectData.VehicleModel_3
-    )
+    const [typeOptions, setTypeOptions] = useState(VehicleSelectData.VehicleType)
+    const [brandOptions, setBrandOptions] = useState(VehicleSelectData.VehicleBrand)
+    const [modelOptions, setModelOptions] = useState(VehicleSelectData.VehicleModel)
+    const [modelTwoOptions, setModelTwoOptions] = useState(VehicleSelectData.VehicleModel_2)
+    const [modelThreeOptions, setModelThreeOptions] = useState(VehicleSelectData.VehicleModel_3)
 
-    const handlePlaceHolder = (x) => {
-        return x.slice(0, 1).map((item) => item.label)
+    const handlePlaceHolder = x => {
+        return x.slice(0, 1).map(item => item.label)
     }
 
     return (
         <StyledSelectInput>
             <StyledSelect>
                 <Select
-                    key={typeOptions.values}
+                    key={typeOptions.values.toString()}
                     options={typeOptions}
                     placeholder={handlePlaceHolder(typeOptions)}
                 />
             </StyledSelect>
             <StyledSelect>
                 <Select
-                    key={brandOptions.values}
+                    key={brandOptions.values.toString()}
                     options={brandOptions}
                     placeholder={handlePlaceHolder(brandOptions)}
                 />
             </StyledSelect>
             <StyledSelect>
                 <Select
-                    key={modelOptions.values}
+                    key={modelOptions.values.toString()}
                     options={modelOptions}
                     placeholder={handlePlaceHolder(modelOptions)}
                 />
             </StyledSelect>
             <StyledSelect>
                 <Select
-                    key={modelTwoOptions.values}
+                    key={modelTwoOptions.values.toString()}
                     options={modelTwoOptions}
                     placeholder={handlePlaceHolder(modelTwoOptions)}
                 />
             </StyledSelect>
             <StyledSelect>
                 <Select
-                    key={modelThreeOptions.values}
+                    key={modelThreeOptions.values.toString()}
                     options={modelThreeOptions}
                     placeholder={handlePlaceHolder(modelThreeOptions)}
                 />

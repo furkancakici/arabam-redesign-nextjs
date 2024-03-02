@@ -33,8 +33,11 @@ export const StyledNavbar = styled.nav`
 `
 
 export const StyledImgLogo = styled(Image)`
+    width: 250px;
+    height: 45px;
     ${SIZES.phone} {
         margin-left: 16px;
+        width: 200px;
     }
 `
 
@@ -100,23 +103,16 @@ type BtnProps = {
 }
 // 200 120 250
 export const Button = styled.button<BtnProps>`
-    width: ${(props) => props.width}px;
+    width: ${props => props.width}px;
     height: 45px;
     border-radius: 25px;
     padding: 5px;
     margin-right: 5px;
     margin-left: 5px;
-    margin-bottom: ${(props) => props.mb}px;
-    background-color: ${(props) =>
-        props.primary
-            ? props.theme.textColor.darkRed
-            : props.theme.backgroundColor.white};
-    color: ${(props) =>
-        props.primary
-            ? props.theme.backgroundColor.white
-            : props.theme.textColor.darkRed};
-    box-shadow: ${(props) =>
-        props.shadow ? props.theme.fx.shadow : undefined};
+    margin-bottom: ${props => props.mb}px;
+    background-color: ${props => (props.primary ? props.theme.textColor.darkRed : props.theme.backgroundColor.white)};
+    color: ${props => (props.primary ? props.theme.backgroundColor.white : props.theme.textColor.darkRed)};
+    box-shadow: ${props => (props.shadow ? props.theme.fx.shadow : undefined)};
     font-weight: bold;
     letter-spacing: 0.4px;
     cursor: pointer;
@@ -204,22 +200,15 @@ export const MobileInput = styled.input`
 `
 
 export const MobileButton = styled.button<BtnProps>`
-    width: ${(props) => (props.big ? '180' : '130')}px;
+    width: ${props => (props.big ? '180' : '130')}px;
     height: 45px;
     border-radius: 25px;
     padding: 5px;
     margin-right: 5px;
     margin-left: 5px;
-    background-color: ${(props) =>
-        props.primary
-            ? props.theme.textColor.darkRed
-            : props.theme.backgroundColor.white};
-    color: ${(props) =>
-        props.primary
-            ? props.theme.backgroundColor.white
-            : props.theme.textColor.darkRed};
-    box-shadow: ${(props) =>
-        props.shadow ? props.theme.fx.shadow : undefined};
+    background-color: ${props => (props.primary ? props.theme.textColor.darkRed : props.theme.backgroundColor.white)};
+    color: ${props => (props.primary ? props.theme.backgroundColor.white : props.theme.textColor.darkRed)};
+    box-shadow: ${props => (props.shadow ? props.theme.fx.shadow : undefined)};
     font-weight: bold;
     letter-spacing: 0.4px;
     cursor: pointer;
@@ -316,10 +305,7 @@ export const StyledAdButton = styled.button<AdProps>`
     letter-spacing: 0.4px;
     font-size: 19px;
     cursor: pointer;
-    color: ${(props) =>
-        props.primary
-            ? props.theme.textColor.darkRed
-            : props.theme.textColor.black};
+    color: ${props => (props.primary ? props.theme.textColor.darkRed : props.theme.textColor.black)};
     background-color: ${({ theme }) => theme.backgroundColor.lightGray};
 
     display: flex;

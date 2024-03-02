@@ -33,12 +33,7 @@ const Navbar: FC = () => {
             <NavWrapper>
                 <StyledNavbar>
                     <Link href='/' passHref>
-                        <StyledImgLogo
-                            src='/images/logo.gif'
-                            alt='Site Logo'
-                            width={isMobile ? '200' : '250'}
-                            height={45}
-                        />
+                        <StyledImgLogo src='/images/logo.gif' alt='Site Logo' width={250} height={45} />
                     </Link>
                     <Span>
                         <Input

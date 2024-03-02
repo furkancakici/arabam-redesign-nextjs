@@ -141,10 +141,7 @@ export const SideContent = styled.div<{ height?: number }>`
     }
 `
 export const StyledSpan = styled.span<{ clicked?: boolean }>`
-    transform: ${({ clicked }) =>
-        clicked
-            ? 'translateY(-5px) rotate(-90deg)'
-            : 'translateY(-5px) rotate(90deg)'};
+    transform: ${({ clicked }) => (clicked ? 'translateY(-5px) rotate(-90deg)' : 'translateY(-5px) rotate(90deg)')};
     color: ${({ theme }) => theme.textColor.darkRed};
     font-size: 20px;
     font-weight: bold;

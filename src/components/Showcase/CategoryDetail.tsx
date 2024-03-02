@@ -99,7 +99,7 @@ const SideCategoryDetails = () => {
             <SideContent height={150}>
                 <h2>Fiyat</h2>
                 <StyledCategoryInput>
-                    <StyledCategorySelect width={180}>
+                    <StyledCategorySelect width={180} mb={8}>
                         <Select
                             key={SideCategoryOption_Unit.values.toString()}
                             options={SideCategoryOption_Unit}
@@ -116,12 +116,14 @@ const SideCategoryDetails = () => {
             <SideContent height={150}>
                 <h2>Adres</h2>
                 <StyledCategoryInput>
-                    <StyledCategorySelect width={175}>
+                    <StyledCategorySelect width={175} mb={8}>
                         <Select
                             key={SideCategoryOption_City.values.toString()}
                             options={SideCategoryOption_City}
                             placeholder={'İL'}
                         />
+                    </StyledCategorySelect>
+                    <StyledCategorySelect width={175}>
                         <Select
                             key={SideCategoryOption_District.values.toString()}
                             options={SideCategoryOption_District}

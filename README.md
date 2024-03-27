@@ -8,7 +8,7 @@
 ### I would like to express my gratitude to [Reyyan Karataş](https://www.linkedin.com/in/reyyankaratas/) for allowing me to work on this project.
 
 - Design: [Link](https://www.behance.net/gallery/110276827/Arabamcom-Redesign-Concept)
-- Live: [Link](https://arabam-redesign-nextjs.vercel.app/)
+- Live: [Link](https://arabam-redesign.netlify.app/)
 ### Technologies Used:
 + Next.js
 + Styled Components
